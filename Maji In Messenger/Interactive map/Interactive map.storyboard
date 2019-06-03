@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="APh-IP-6Fd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nJB-vP-RRv">
+            <objects>
+                <viewController id="APh-IP-6Fd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kXj-9V-5lO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0K3-e5-VLW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="593"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="feE-2u-9e8" firstAttribute="bottom" secondItem="0K3-e5-VLW" secondAttribute="bottom" constant="5" id="UhX-iY-PcN"/>
+                            <constraint firstItem="0K3-e5-VLW" firstAttribute="centerX" secondItem="kXj-9V-5lO" secondAttribute="centerX" id="Zvj-KA-IgX"/>
+                            <constraint firstItem="0K3-e5-VLW" firstAttribute="top" secondItem="feE-2u-9e8" secondAttribute="top" id="cQW-Yl-b5F"/>
+                            <constraint firstItem="0K3-e5-VLW" firstAttribute="leading" secondItem="feE-2u-9e8" secondAttribute="leading" id="ijz-hx-Ddk"/>
+                            <constraint firstItem="feE-2u-9e8" firstAttribute="trailing" secondItem="0K3-e5-VLW" secondAttribute="trailing" id="sKy-1c-DQf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="feE-2u-9e8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Ns5-IL-uQH"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pm1-Eq-R4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="160"/>
+        </scene>
+    </scenes>
+</document>
